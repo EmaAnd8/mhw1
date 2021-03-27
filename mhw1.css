@@ -1,0 +1,360 @@
+body{ /*colore del font e style della pagina*/
+	margin:0px;
+	color: black;
+	font-style: normal;
+	font-family:'Syne Mono', monospace;
+}
+
+@media(max-width:900px) /*per adattamento mobile */
+{
+	body{
+		font-size: 13px;
+	}
+}
+ header
+{
+  
+  color: white;
+  background-image: url("img3.PNG");
+  background-size: cover;
+  background-position: center;
+  height: 376px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	
+}
+
+
+header::before { /*per realizzare l'overlay*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h1{/*per carattere intestazione header*/
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	color: aliceblue;
+}
+
+@media(max-width:900px)
+{
+	header h1{
+		
+		text-align: center;
+	}
+}
+.style{
+	
+	text-transform: uppercase;
+	color: white;
+	background-color:  rgb(26,50,96);
+	font-size: 1.3em;
+	letter-spacing: 1px;
+}
+
+
+
+
+ div.style nav{
+    
+	 height:20px;
+	 text-align: center;
+	 padding-bottom: 10px;
+	 padding-top: 10px;
+	 margin-bottom: 50px;
+	
+}
+
+
+
+a{ /*per manina*/
+	cursor: pointer;
+}
+
+a:hover{ /*per pseudoclasse*/
+	background-color: white;
+	border-radius:10px;
+	color:rgb(26,50,96);
+}
+
+a.button {
+  padding: 10px 15px;
+  border: 2px solid lightgrey;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+
+
+
+#link-group a{
+	margin: 10px;
+	
+}
+
+#menu {/*per menu a scomparsa*/
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0px;
+ 
+}
+
+@media (max-width: 900px) {
+  #link-group {
+    display: none;
+  }
+
+  #menu {
+   display:inline-block;
+   text-align: center;
+  }
+  
+}
+
+section{/*margini della sezione*/
+	margin: 100px;
+}
+
+@media(max-width:900px){
+	section{
+		margin:0%;
+	}
+}
+section h1{
+	background-color:lightgrey;
+	text-align:center;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: white;
+}
+
+@media(max-width:900px)
+{
+	
+	section h1{
+	background-color: white;
+	color: grey;
+	text-decoration: 10px underline grey;
+}
+	
+}
+
+#gestione{/*per logo*/
+	display:flex;
+    justify-content:space-between;
+	margin-top: 50px;
+	
+}
+
+#gestione div{
+	flex-grow:1;
+	padding:30px;
+	 
+	
+}
+
+#gestione p{
+	text-align:justify;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	padding-left: 20px;
+
+}
+
+
+
+
+#gestione img {
+  
+  border-radius: 10px;
+  width:50%;
+  padding-left: 100px;
+  
+}
+
+@media(max-width:900px)
+{
+	
+	#gestione{
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+	
+	#gestione p{
+	text-align:center;
+	font-size: 13px;
+	letter-spacing: 1px;
+	padding-left: 0px;
+
+	}
+	
+	#gestione img
+	{
+		display: block;
+		margin-left: auto;
+ 	    margin-right: auto;
+		padding-left:0px;
+		
+	}
+	
+}
+
+
+
+#use{/*per contenuti*/
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+	text-align:center;
+}
+
+#use div 
+{
+	
+	flex-grow: 1;
+	padding-top:100px;
+}
+
+
+#use img {
+  border: 4px solid grey;
+  border-radius: 10px;
+  height:250px;
+  width:250px;
+
+}
+
+
+#use1{/*per contenuti*/
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+	text-align:center;
+}
+
+#use1 div 
+{
+	
+	flex-grow: 1;
+	padding-top:100px;
+}
+
+
+#use1 img {
+  border: 4px solid grey;
+  border-radius: 10px;
+  height:250px;
+  width:250px;
+
+}
+
+
+
+@media(max-width:900px)
+{
+	#use,#use1{
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size:13px;
+	}
+	
+	#use div,#use1 div 
+{
+	
+	flex-grow: 1;
+	padding:30px
+}
+	
+	#use img,#use1 img {
+		height:50%;
+  		width:50%;
+	}
+}
+
+
+
+footer/*per footer*/
+{
+	
+	
+  	height:15vh;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+}
+
+footer p{
+	display: inline-block;
+	margin: 0px;
+}
+
+footer em{
+	font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+}
+
+
+.button1 {/*per bottoni nei contatti*/
+  background-image: url("facebook.png");
+  background-position: center;
+  display:inline-block;
+  background-size: cover;
+  border: none;
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+  margin-top:10px;
+ 
+}
+
+
+.button2 {
+  background-image: url("twitter.png");
+  background-position: center;
+  display:inline-block;
+  background-size: cover;
+  border: none;
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+  margin-top:10px;
+ 
+}
+
+.button3 {
+  background-image: url("ig.png");
+  background-position: center;
+  display:inline-block;
+  background-size: cover;
+  border: none;
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+
+footer a:hover{/*sovrascrivo*/
+	background-color:  rgb(26,50,96); 
+}
+
+
